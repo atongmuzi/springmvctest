@@ -10,7 +10,7 @@ public class jdbcTest {
     @Autowired
     JdbcTemplate jdbcTemplate;
     int i = 2;
-    @Scheduled(cron = "0/10 * * * * ?") //每三秒执行一次
+    @Scheduled(cron = "0 0 1 * * ?") //每三秒执行一次
     public void toUpdate(){
 
         String sql = "update user_credit set used_credit = ? where id = ? ";

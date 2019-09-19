@@ -1,8 +1,12 @@
 package controller;
 
 import dto.User;
+import dto.UserCredit;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -25,6 +29,8 @@ public class IndexController {
     HttpServletRequest request;
     @Autowired
     private ServletContext servletContext;
+    @Autowired
+    JdbcTemplate jdbcTemplate;
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public ModelAndView test(String name,String pass){
@@ -87,5 +93,14 @@ public class IndexController {
             e.printStackTrace();
         }
         return  "false";
+    }
+    @RequestMapping(value = "/testjdbc",produces = {"application/json;charset=utf-8"})
+    @ResponseBody
+    public UserCredit jdbctest(){
+        String sql = "select * from user_credit where id = ?";
+        RowMapper<UserCredit> result = new BeanPropertyRowMapper<>(UserCredit.class);
+        UserCredit  userCredit = jdbcTemplate.queryForObject(sql,result,82);
+        System.out.println(userCredit.toString());
+        return  userCredit;
     }
 }
