@@ -26,6 +26,7 @@ public class junitExcelTest {
         String path = System.getProperty("user.dir")+ File.separator+"data"+File.separator+"plantname.xlsx";
 
         List<PlantDTO> plantDTOList = excleUtils.excelRead(path,PlantDTO.class);
+
         System.out.println("test");
     }
 }
