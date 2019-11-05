@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import service.RoleTest;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
@@ -33,6 +34,7 @@ public class IndexController {
     JdbcTemplate jdbcTemplate;
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
+    @RoleTest(role = "test")
     public ModelAndView test(String name,String pass){
         ModelAndView modelAndView = new ModelAndView("home");
         modelAndView.addObject("name",name);

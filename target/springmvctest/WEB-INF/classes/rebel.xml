@@ -6,8 +6,7 @@
 -->
 <application generated-by="maven" build-tool-version="3.6.1" plugin-version="1.1.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://update.zeroturnaround.com/jrebel/rebel-2_2.xsd">
 	<classpath>
-		<dir name="/Users/apple/Documents/jmeter/springmvctest/target/classes">
-			<include name="/Users/apple/Documents/jmeter/springmvctest/target/springmvctest/jsonFile1.json"/>
+		<dir name="/Users/apple/Documents/jmeter/springmvctest/src/main/resources">
 		</dir>
 		<dir name="/Users/apple/Documents/jmeter/springmvctest/target/classes">
 		</dir>
