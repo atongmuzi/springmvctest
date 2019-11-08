@@ -4,6 +4,7 @@ import dto.User;
 import dto.UserCredit;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -25,7 +26,8 @@ import java.util.Map;
 
 @Controller
 public class IndexController {
-
+    @Autowired
+    ApplicationContext applicationContext;
     @Autowired
     HttpServletRequest request;
     @Autowired

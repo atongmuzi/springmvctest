@@ -10,7 +10,7 @@ import java.util.List;
 public class ExcleUtils {
 
     public  <T> List<T> excelRead(String path,Class<T> tClass){
-        List<T> dtoList = new ArrayList<>();
+        List<T> dtoList = new ArrayList<T>();
         try {
                 dtoList = ExcelUtils.getInstance().readExcel2Objects(path,tClass);
 
