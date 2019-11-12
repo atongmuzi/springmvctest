@@ -367,10 +367,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.38">
+  <component name="RunManager" selected="JUnit.junitJdbcTest.testQueryOne">
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test" />
       <module name="springmvctest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="junitJdbcTest.testQueryOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvctest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="junit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="junit" />
+      <option name="MAIN_CLASS_NAME" value="junit.junitJdbcTest" />
+      <option name="METHOD_NAME" value="testQueryOne" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -385,21 +401,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="junit" />
       <option name="MAIN_CLASS_NAME" value="junit.junitProfilesTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="junitProfilesTestXml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springmvctest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="junit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="junit" />
-      <option name="MAIN_CLASS_NAME" value="junit.junitProfilesTestXml" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -772,17 +773,17 @@
       <item itemvalue="JUnit.junitProfilesTest" />
       <item itemvalue="JUnit.junitProfilesTest.activeprofiles" />
       <item itemvalue="JUnit.junitProfilesTest.roleTest" />
-      <item itemvalue="JUnit.junitProfilesTestXml" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.38" />
       <item itemvalue="Tomcat Server.test" />
+      <item itemvalue="JUnit.junitJdbcTest.testQueryOne" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.junitJdbcTest.testQueryOne" />
         <item itemvalue="Application.test" />
         <item itemvalue="JUnit.junitProfilesTest.activeprofiles" />
         <item itemvalue="JUnit.junitProfilesTest.roleTest" />
         <item itemvalue="JUnit.junitProfilesTest" />
-        <item itemvalue="JUnit.junitProfilesTestXml" />
       </list>
     </recent_temporary>
   </component>
