@@ -4,5 +4,30 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="deleteUnindexed" value="false" />
+        <option name="httpAuthEnabled" value="false" />
+        <option name="httpPassword" />
+        <option name="httpUsername" />
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="com.zeroturnaround.jrebel.remoting.DeleteUnindexedFiles" value="false" />
+            <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="off" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="rebelXmlGenerationType" value="external" />
+            <entry key="savedRebelXmlBuildTool" value="maven" />
+            <entry key="savedRebelXmlContent" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&#10;&lt;!--&#10;  This is the JRebel configuration file. It maps the running application to your IDE workspace, enabling JRebel reloading for this project.&#10;  Refer to https://manuals.zeroturnaround.com/jrebel/standalone/config.html for more information.&#10;--&gt;&#10;&lt;application generated-by=&quot;maven&quot; build-tool-version=&quot;3.6.1&quot; plugin-version=&quot;1.1.9&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://www.zeroturnaround.com&quot; xsi:schemaLocation=&quot;http://www.zeroturnaround.com http://update.zeroturnaround.com/jrebel/rebel-2_2.xsd&quot;&gt;&#10;&#9;&lt;classpath&gt;&#10;&#9;&#9;&lt;dir name=&quot;/Users/apple/Documents/jmeter/springmvctest/target/classes&quot;&gt;&#10;&#9;&#9;&#9;&lt;include name=&quot;/Users/apple/Documents/jmeter/springmvctest/target/springmvctest/jsonFile1.json&quot;/&gt;&#10;&#9;&#9;&lt;/dir&gt;&#10;&#9;&#9;&lt;dir name=&quot;/Users/apple/Documents/jmeter/springmvctest/target/classes&quot;&gt;&#10;&#9;&#9;&lt;/dir&gt;&#10;&#9;&lt;/classpath&gt;&#10;&#10;&#9;&lt;web&gt;&#10;&#9;&#9;&lt;link target=&quot;/&quot;&gt;&#10;&#9;&#9;&#9;&lt;dir name=&quot;/Users/apple/Documents/jmeter/springmvctest/src/main/webapp&quot;&gt;&#10;&#9;&#9;&#9;&lt;/dir&gt;&#10;&#9;&#9;&lt;/link&gt;&#10;&#9;&lt;/web&gt;&#10;&#10;&lt;/application&gt;&#10;" />
+          </map>
+        </option>
+        <option name="masterModuleName" />
+        <option name="overrideStandardXmlFolder" value="false" />
+        <option name="remotingEnabled" value="false" />
+        <option name="secure" value="true" />
+        <option name="url" />
+        <option name="xmlDir" />
+      </configuration>
+    </facet>
   </component>
 </module>
