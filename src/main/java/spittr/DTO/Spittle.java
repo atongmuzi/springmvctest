@@ -1,4 +1,4 @@
-package spittr;
+package spittr.DTO;
 
 import lombok.Getter;
 import lombok.Setter;
