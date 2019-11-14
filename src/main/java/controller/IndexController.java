@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import service.RoleTest;
@@ -46,6 +47,12 @@ public class IndexController {
     public String test2(HttpServletRequest request){
         request.setAttribute("pass","123");
         return  "home";
+    }
+    @RequestMapping(value = "/model")
+    public String model(Model model,String name){
+        model.addAttribute("key","value");
+        //model.addAttribute("name",name);
+        return "home";
     }
 
     @GetMapping(value = "/getbean")
