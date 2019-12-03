@@ -20,6 +20,7 @@ public class junitDubboConsumeTest {
 
     @Test
     public void test(){
-        computeService.add(1,2);
+       int result= computeService.add(1,2);
+        System.out.println(result);
     }
 }
