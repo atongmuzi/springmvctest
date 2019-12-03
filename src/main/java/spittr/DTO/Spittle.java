@@ -30,7 +30,7 @@ public class Spittle {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Spittle spittle = (Spittle) o;
-        return id.equals(spittle.id) &&
+        return message.equals(spittle.message) &&
                 time.equals(spittle.time);
     }
 

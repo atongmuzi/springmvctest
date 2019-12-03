@@ -1,6 +1,7 @@
 package config;
 
 import aspect.Audience;
+import com.testfan.service.inf.ComputeService;
 import excel.ExcleUtils;
 import org.apache.commons.dbcp.BasicDataSource;
 
@@ -10,6 +11,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = {"templete","service","aspect","excel"})
+@ImportResource(locations = {"classpath:consumer.xml"})
 @EnableAspectJAutoProxy
 public class DatasourceConfig {
     @Bean

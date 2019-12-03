@@ -11,11 +11,13 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.servlet.view.InternalResourceView;
 import spittr.DTO.Spittle;
 import spittr.Service.SpittleResposiory;
+import javax.activation.*;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import static org.mockito.Mockito.*;
+import static org.hamcrest.CoreMatchers.*;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -38,7 +40,7 @@ public class shouldShowRecentSpittles {
         MockitoAnnotations.initMocks(this);
 
         List<Spittle> spittleList = createSpitleList(20);
-        when(spittleResposiory.findSpittles(anyLong(),anyInt())).thenReturn(spittleList).thenReturn(null);
+        when(spittleResposiory.findSpittles(anyLong(),anyInt())).thenReturn(spittleList);
         //when(request.Get(anyString()).e.thenReturn("foo");
         List<Spittle> spittles =  spittleResposiory.findSpittles(Long.MAX_VALUE,20);
         List<Spittle> spittles1 =  spittleResposiory.findSpittles(Long.MAX_VALUE,19);
@@ -48,7 +50,10 @@ public class shouldShowRecentSpittles {
         spittleController = new SpittleController(spittleResposiory);
         MockMvc mockMvc = standaloneSetup(spittleController).setSingleView(new InternalResourceView("/WEB-INF/views/spittles.jsp")).build();
         mockMvc.perform(get("/spittles")).andExpect(view().name("spittles"));
+        mockMvc.perform(get("/spittles")).andExpect(model().attributeExists("spittleList"));
+        mockMvc.perform(get("/spittles")).andExpect(model().attribute("spittleList",hasItems(spittleList.toArray())));
     }
+
 
 
     public List<Spittle>  createSpitleList(int count){
