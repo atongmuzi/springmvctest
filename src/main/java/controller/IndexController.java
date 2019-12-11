@@ -56,17 +56,18 @@ public class IndexController {
     }
 
     @GetMapping(value = "/getbean")
+    @ResponseBody
     public String getbean(User user){
         request.setAttribute("name",user.getName());
         request.setAttribute("pass",user.getPass());
-        return "home";
+        return user.getName();
     }
 
     @PostMapping(value = "/postbean")
     @ResponseBody
     public String postbean(User user){
         request.setAttribute("user",user);
-        return "home";
+        return user.getName();
     }
 
     @RequestMapping(value = "/postJson",produces = {"application/json;charset=utf-8"})
