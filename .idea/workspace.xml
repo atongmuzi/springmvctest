@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df035845-4318-48c6-a440-7c12f87da61a" name="Default Changelist" comment="" />
+    <list default="true" id="df035845-4318-48c6-a440-7c12f87da61a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/DatasourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/DatasourceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/junit/junitDubboConsumeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/junit/junitDubboConsumeTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,8 +138,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/config/DatasourceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="411">
+              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -348,10 +352,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="junit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springmvctest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -762,6 +762,8 @@
       <workItem from="1573717665384" duration="4614000" />
       <workItem from="1575270430655" duration="13422000" />
       <workItem from="1575507438090" duration="317000" />
+      <workItem from="1576655245963" duration="1035000" />
+      <workItem from="1577153412030" duration="598000" />
     </task>
     <servers />
   </component>
@@ -798,7 +800,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145032000" />
+    <option name="totallyTimeSpent" value="146665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -810,11 +812,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5671875" visible="true" weight="0.3004292" />
-      <window_info id="Structure" order="1" sideWeight="0.4328125" side_tool="true" visible="true" weight="0.3004292" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5640625" visible="true" weight="0.3090129" />
+      <window_info id="Structure" order="1" sideWeight="0.4359375" side_tool="true" visible="true" weight="0.3090129" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -1347,8 +1348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/config/DatasourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="411">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
